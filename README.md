@@ -2,11 +2,15 @@
 
 ---
 
+
+
 # camera_lidar-fusion
 
 이 레포지토리는 카메라랑 라이다를 퓨전하는 레포지토리이다.
 
 센서퓨전을 하기 위해서는 다음과 같은 값들 필요하다. 먼저 카메라와 lidar 사이의 extrinsic matrix를 구해야 한다. 나는 그 extrinsic matrix를 구하는 방법을 matlab을 이용해서 구할 것이다.
+
+
 
 ---
 
@@ -31,6 +35,8 @@ ros2 run camera_to_png_lidar_to_pcd_for_matlab calib_data_saver
 위 명령을 이용해 촬영을 모두 마치게 되면 data들이 **calibration_data**라는 폴더에 사진은 `/images`에 pointcloud는 `/lidar`에 저장되게 된다.
 
 ---
+
+
 
 ## 2. 포인트클라우드 전처리 (ROI 설정)
 
@@ -62,6 +68,8 @@ ros2 run camera_to_png_lidar_to_pcd_for_matlab calib_data_saver
 **(사진 넣을 부분)**
 
 ---
+
+
 
 ## 3. Extrinsic Matrix 산출
 
